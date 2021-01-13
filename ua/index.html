@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Gelios Co</title>
+    <script
+      src="https://kit.fontawesome.com/b372149f2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- overlay menu -->
+
+    <div class="mob-menu" id="mobileMenu">
+      <a
+        class="mob-link"
+        id="closeBtn"
+        href="javasctipt:void(0)"
+        onclick="closeMenu()"
+      >
+        <i class="fas fa-times"></i>
+      </a>
+      <ul class="mob-menu-list">
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#about">про нас</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#whatwedo">що ми робимо</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#services">послуги</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#team">команда</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#contact">зв'язатись з нами</a>
+        </li>
+        <li class="mob-menu-item">
+          <a
+            class="mob-link linkedin"
+            href="https://www.linkedin.com/in/gelios-company-IT"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="mob-menu-item">
+          <a
+            class="mob-link facebook"
+            href="https://www.facebook.com/Gelioscomapny-107764124606388"
+            target="_blank"
+            rel="noreferrer"
+            >Facebook <i class="fab fa-facebook-square"></i
+          ></a>
+        </li>
+        <li class="mob-menu-item">
+          <a
+            class="mob-link instagram"
+            href="https://www.instagram.com/gelios.company/"
+            target="_blank"
+            rel="noreferrer"
+            >Instagram <i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- top button -->
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <i class="fas fa-angle-up"></i>
+    </button>
+
+    <!-- header -->
+
+    <header class="d-flex">
+      <div>
+        <a href="#">
+          <img class="logo" src="../img/Gelios_logo_2.png" alt="" />
+        </a>
+      </div>
+      <div class="d-flex lang-menu">
+        <a href="../">en</a>/ <a href="#" class="lang-active">укр</a>/
+        <a href="../ru/">рос</a>
+      </div>
+      <div class="d-flex anchor-menu">
+        <a href="#about">про нас</a>
+        <a href="#whatwedo">що ми робимо</a>
+        <a href="#services">послуги</a>
+        <a href="#team">команда</a>
+        <a href="#contact">зв'язатись з нами</a>
+      </div>
+      <a
+        id="mobMenuBtn"
+        class="head-link"
+        href="javascript:void(0)"
+        onclick="openMenu()"
+      >
+        <img src="../img/Group 17.svg" alt="" />
+      </a>
+    </header>
+
+    <!-- main content -->
+
+    <main>
+      <!-- motto section -->
+
+      <section>
+        <div
+          id="#motto"
+          class="section motto d-flex"
+          data-aos="fade-down"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="motto-text cyrrilic-motto">
+            зробити<br />
+            успіх<br />
+            неминучим
+          </div>
+          <div class="social-menu m-auto d-flex">
+            <p>Слідкуйте за нами</p>
+            <span class="line"></span>
+            <a
+              class="social-links"
+              href="https://www.instagram.com/gelios.company/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img class="" src="../img/instagram.svg" alt="" />
+            </a>
+            <a
+              class="social-links"
+              href="https://www.facebook.com/Gelioscomapny-107764124606388"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img class="" src="../img/facebook.svg" alt="" />
+            </a>
+            <a
+              class="social-links"
+              href="https://www.linkedin.com/in/gelios-company-IT"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img class="" src="../img/linkedIn.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- about us section -->
+
+      <section>
+        <div
+          id="about"
+          class="section about"
+          data-aos="zoom-in-left"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="about-text">
+            <h4>про нас</h4>
+            <h2>ШЛЯХ ДО МРІЇ</h2>
+            <p>
+              Ми компанія Gelios. Наша команда може реалізувати будь-яке
+              рішення, яке буде необхідно для зростання і процвітання вашого
+              бізнесу.
+            </p>
+            <p>
+              Компанія є розробником цифрових продуктів. Зібравши досвідчених
+              професіоналів, ми використовуємо всі свої ресурси, щоб допомогти
+              нашим клієнтам побачити нові можливості і зробити правильний
+              перехід до бізнесу майбутнього.
+            </p>
+            <p>
+              Вчора ви розповіли нам про свої найзаповітніших бажання, сьогодні
+              ми використовуємо кожну можливість, щоб завтра перетворити вашу
+              мрію в реальність.
+            </p>
+            <h6 class="cyrrylic-big-name">про нас</h6>
+            <span class="grey-block"></span>
+          </div>
+          <div>
+            <img src="../img/2.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- what we do section -->
+
+      <section>
+        <div
+          id="whatwedo"
+          class="section whatwedo"
+          data-aos="zoom-in-right"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="whatwedo-text">
+            <h4>що ми робимо</h4>
+            <h2>ВІРНИЙ СОЮЗНИК НА ВАШОМУ ШЛЯХУ</h2>
+            <p>
+              Ми допомагаємо бізнесу створити дійсно цінний продукт або послугу.
+            </p>
+            <p>
+              Наша тактика проста: орієнтованість на людей, висококваліфіковані
+              фахівці і професійний підхід до вирішення проблем. Використовуючи
+              ці інструменти, ми допомагаємо вашому бізнесу в найкоротші терміни
+              вийти на новий рівень розвитку.
+            </p>
+            <p>
+              Наші цифрові послуги є інноваційними та адаптованими до потреб
+              ваших клієнтів.
+            </p>
+            <h6 class="cyrrylic-big-name">що ми робимо</h6>
+            <span class="grey-block"></span>
+          </div>
+          <div class="img-container">
+            <img src="../img/3.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- services section -->
+
+      <section>
+        <div
+          id="services"
+          class="services section"
+          data-aos="fade-right"
+          data-aos-easing="ease"
+        >
+          <div class="services-text">
+            <h4>послуги</h4>
+            <h2>Чим ми можемо допомогти Вам сьогодні?</h2>
+            <h6 class="cyrrylic-big-name">послуги</h6>
+          </div>
+          <div class="cards-container">
+            <div class="cards-row">
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">01</span>
+                  <h5>Комплексний проект</h5>
+                </div>
+                <img src="../img/4.1.png" alt="" />
+                <div class="service-text">
+                  <p>
+                    Наша компанія надає комплексні рішення для всіх сфер бізнесу. Ми реалізуємо найскладніші проекти, щоб вивести ваш бізнес на новий рівень. З нашими технологіями ви отримаєте прозорий контроль над усіма бізнес-процесами, а також отримаєте можливість налагодити ефективну взаємодію з клієнтами та партнерами. Ми проаналізуємо потреби вашого бізнесу і розробимо професійну інформаційну систему для вирішення складних завдань і задоволення потреб бізнесу.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">02</span>
+                  <h5>Консалтинг</h5>
+                </div>
+                <img
+                  src="../img/scott-graham-5fNmWej4tAA-unsplash 1.png"
+                  alt=""
+                />
+                <div class="service-text">
+                  <p>
+                    Наша команда визначить правильний напрямок розвитку вашого ІТ-проекту. Консалтинг включають підбір порад на високому рівні, швидкий аналіз і компетентну експертизу вашого проекту. Наша стратегія – це консультація задовго до реалізації проекту, в цьому випадку наші фахівці визначать вірний напрямок роботи і допоможуть не витрачати даремно сили, час і ресурси.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">03</span>
+                  <h5>Аудит</h5>
+                </div>
+                <img
+                  src="../img/lukas-blazek-mcSDtbWXUZU-unsplash 1.png"
+                  alt=""
+                />
+                <div class="service-text">
+                  <p>
+                    Ми розуміємо, що майбутнє вашого бізнесу залежить від успішного аудиту. Належний аудит допомагає компаніям створювати додану вартість і знижувати ризики. Спираючись на світовий досвід, наша команда пропонує багатопрофільні ресурси для вирішення складних технічних проблем, а також практичні поради професіоналів, визнаних експертами в своїй галузі.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards-row">
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">04</span>
+                  <h5>Аутсорсинг</h5>
+                </div>
+                <img
+                  src="../img/priscilla-du-preez-NjirplnVra8-unsplash 1.png"
+                  alt=""
+                />
+                <div class="service-text">
+                  <p>
+                    Ми надаємо комплексні послуги стратегічного аутсорсингу для вашого бізнесу. Ми забезпечуємо повну підтримку системних ІТ-сервісів, користувачів, систем інформаційної безпеки, ІТ-інфраструктури, а також вирішуємо завдання клієнтів по автоматизації і управлінні бізнес-процесами.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">05</span>
+                  <h5>Аутстаффінг</h5>
+                </div>
+                <img src="../img/4.4.png" alt="" />
+                <div class="service-text">
+                  <p>
+                    Ми надаємо послугу по правильній організації аутстаффінгу, допомагаємо налагодити процес взаємодії. Ми легко вирішуємо проблеми для оптимальної організації роботи. Наша основна мета – вирішення питань, пов'язаних з оптимізацією часу і ресурсів, роботи з бюджетом компанії, а також зниження ризиків, пов'язаних з вирішенням трудових питань.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-text">
+                  <a href="#contact"><h5>зв'язатись з нами</h5></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- team section -->
+
+      <section>
+        <div
+          id="team"
+          class="team"
+          data-aos="fade-in-left"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="team-text">
+            <h2>Команда</h2>
+            <p>
+              Наші фахівці працюють над створенням цифрових продуктів для
+              компаній з різних сфер. Ми знаходимо та інтегруємо можливості та
+              рішення для бізнесу. Ми готові працювати лицем до лиця,
+              пліч-о-пліч, щоб зробити все можливе для вас.
+            </p>
+            <h6 class="cyrrylic-big-name">Команда</h6>
+          </div>
+          <div class="team-cards-container">
+            <div class="team-cards">
+              <div class="team-cards-row">
+                <div class="team-card">
+                  <img id="avatarOne" src="../img/Oleg.png" alt="" />
+                  <h4>Oleg Lapa</h4>
+                  <p>owner</p>
+                </div>
+                <div class="team-card">
+                  <img id="avatarTwo" src="../img/Nick.png" alt="" />
+                  <h4>Nick Mykhailov</h4>
+                  <p>CEO, co-founder</p>
+                </div>
+                <div class="team-card">
+                  <img id="avatarThree" src="../img/Daniil.png" alt="" />
+                  <h4>Danil Pyatkov</h4>
+                  <p>BDM, sales manager</p>
+                </div>
+              </div>
+              <div class="team-cards-row">
+                <div class="team-card">
+                  <img id="avatarFour" src="../img/Dima.png" alt="" />
+                  <h4>Dima Mykhailov</h4>
+                  <p>developer</p>
+                </div>
+                <div class="team-card">
+                  <img id="avatarFive" src="../img/Sonya.png" alt="" />
+                  <h4>Sonya Yakovenko</h4>
+                  <p>UX/UI designer</p>
+                </div>
+                <div class="team-card">
+                  <img id="avatarSix" src="../img/Vlad.png" alt="" />
+                  <h4>Vlad Kosachenko</h4>
+                  <p>developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-slider">
+              <div class="team-card">
+                <img id="avatarOne" src="../img/Oleg.png" alt="" />
+                <h4>Oleg Lapa</h4>
+                <p>owner</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarTwo" src="../img/Nick.png" alt="" />
+                <h4>Nick Mykhailov</h4>
+                <p>CEO, co-founder</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarThree" src="../img/Daniil.png" alt="" />
+                <h4>Danil Pyatkov</h4>
+                <p>BDM, sales manager</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarFour" src="../img/Dima.png" alt="" />
+                <h4>Dima Mykhailov</h4>
+                <p>developer</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarFive" src="../img/Sonya.png" alt="" />
+                <h4>Sonya Yakovenko</h4>
+                <p>UX/UI designer</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarSix" src="../img/Vlad.png" alt="" />
+                <h4>Vlad Kosachenko</h4>
+                <p>developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+
+      <section>
+        <div
+          id="contact"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="contact-text">
+            <h2>зв'язатись з нами</h2>
+            <h6 class="cyrrylic-big-name">зв'язатись з нами</h6>
+            <div class="address">
+              <div class="address-block">
+                <div class="address-img">
+                  <img src="../img/envelop.svg" alt="" />
+                </div>
+                <div class="address-text">
+                  <h5>Наша адреса:</h5>
+                  <p>
+                    71-75 Shelton Street, London, Greater London, United
+                    Kingdom, WC2H 9JQ
+                  </p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <form
+            class="form d-flex"
+            action="mailto:hello@gelios.company"
+            method="post"
+          >
+            <div class="form-col">
+              <label class="label" for="">
+                <p>Ваше ім'я*</p>
+                <input class="input" type="text" name="" required />
+              </label>
+              <label class="label" for="">
+                <p>Телефон*</p>
+                <input class="input" type="text" name="" required />
+              </label>
+              <label class="label" for="">
+                <p>Расскажіть нам про Ваш проект*</p>
+                <input class="input" type="text" name="" required />
+              </label>
+              <label for="privacy" class="privacy">
+                <input type="checkbox" name="privacy" required />
+                <p class="privacy-text">
+                  Вказуючи свою поштову електрону адресу, Ви автоматично даєте
+                  згоду на отримання розсилок, у відповідності з нашою Політикою
+                  Конфіденційності*
+                </p>
+              </label>
+            </div>
+            <div class="form-col">
+              <label class="label" for="email">
+                <p>Email*</p>
+                <input class="input" type="text" name="email" required />
+              </label>
+              <label class="label" for="company">
+                <p>Компанія</p>
+                <input class="input" type="text" name="company" />
+              </label>
+              <label class="label" for="interest">
+                <p>Що Вас цікавить?*</p>
+                <input class="input" type="text" name="interest" required />
+              </label>
+              <button class="sendBtn" type="submit">Відправити</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="d-flex">
+        <div>
+          <a href="#">
+            <img class="logo" src="../img/Gelios_logo_2.png" alt="" />
+          </a>
+        </div>
+        <div class="social-menu d-flex">
+          <p>Слідкуйте за нами</p>
+          <span class="line"></span>
+          <a
+            class="social-links"
+            href="https://www.instagram.com/gelios.company/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img class="" src="../img/instagram.svg" alt="" />
+          </a>
+          <a
+            class="social-links"
+            href="https://www.facebook.com/Gelioscomapny-107764124606388"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img class="" src="../img/facebook.svg" alt="" />
+          </a>
+          <a
+            class="social-links"
+            href="https://www.linkedin.com/in/gelios-company-IT"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img class="" src="../img/linkedIn.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="d-flex anchor-menu">
+        <a href="#about">про нас</a>
+        <a href="#whatwedo">що ми робимо</a>
+        <a href="#services">послуги</a>
+        <a href="#team">команда</a>
+        <a href="#contact">зв'язатись з нами</a>
+      </div>
+    </footer>
+<div class="mobile-footer">
+      <div class="footer-first-row">
+        <div>
+          <a href="#">
+            <img class="logo" src="../img/Gelios_logo_2.png" alt="" />
+          </a>
+        </div>
+        <div class="d-flex anchor-menu">
+          <a href="#about">про нас</a>
+        <a href="#whatwedo">що ми робимо</a>
+        <a href="#services">послуги</a>
+        <a href="#team">команда</a>
+        <a href="#contact">зв'язатись з нами</a>
+        </div>
+      </div>
+      <div class="social-menu d-flex">
+        <p>follow us</p>
+        <span class="line"></span>
+        <a
+          class="social-links"
+          href="https://www.instagram.com/gelios.company/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img class="" src="../img/instagram.svg" alt="" />
+        </a>
+        <a
+          class="social-links"
+          href="https://www.facebook.com/Gelioscomapny-107764124606388"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img class="" src="../img/facebook.svg" alt="" />
+        </a>
+        <a
+          class="social-links"
+          href="https://www.linkedin.com/in/gelios-company-IT"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img class="" src="../img/linkedIn.svg" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- scripts -->
+
+    <script>
+      // slick slider
+      $(".mobile-slider").slick({
+        dots: true,
+        arrows: false,
+      });
+    </script>
+    <script src="../js/Scrollify-master/jquery.scrollify.js"></script>
+    <script>
+      // animation on scroll initialization
+      AOS.init({
+        // disable: window.innerWidth < 500,
+      });
+    </script>
+    <script>
+      //top button:
+      topBtn = document.getElementById("topBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          topBtn.style.display = "block";
+        } else {
+          topBtn.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      // overlay menu
+      let mobileMenu = document.getElementById("mobileMenu");
+      let mobMenuBtn = document.getElementById("mobMenuBtn");
+
+      function openMenu() {
+        mobileMenu.style.transition = "1s";
+        mobileMenu.style.transform = "translateX(0%)";
+        mobMenuBtn.style.transition = "1s";
+        mobMenuBtn.style.opacity = "0";
+      }
+
+      function closeMenu() {
+        mobileMenu.style.transition = "1s";
+        mobileMenu.style.transform = "translateX(-100%)";
+        mobMenuBtn.style.transition = "1s";
+        mobMenuBtn.style.opacity = "1";
+      }
+
+      // changing avatars of team
+      var avatarOne = document.getElementById("avatarOne");
+      var avatarTwo = document.getElementById("avatarTwo");
+      var avatarThree = document.getElementById("avatarThree");
+      var avatarFour = document.getElementById("avatarFour");
+      var avatarFive = document.getElementById("avatarFive");
+      var avatarSix = document.getElementById("avatarSix");
+
+      avatarOne.addEventListener("mouseover", () => {
+        avatarOne.src = "../img/Oleg2.png";
+      });
+      avatarOne.addEventListener("mouseleave", () => {
+        avatarOne.src = "../img/Oleg.png";
+      });
+      avatarTwo.addEventListener("mouseover", () => {
+        avatarTwo.src = "../img/Nick2.png";
+      });
+      avatarTwo.addEventListener("mouseleave", () => {
+        avatarTwo.src = "../img/Nick.png";
+      });
+      avatarThree.addEventListener("mouseover", () => {
+        avatarThree.src = "../img/Daniil2.png";
+      });
+      avatarThree.addEventListener("mouseleave", () => {
+        avatarThree.src = "../img/Daniil.png";
+      });
+      avatarFour.addEventListener("mouseover", () => {
+        avatarFour.src = "../img/Dima2.png";
+      });
+      avatarFour.addEventListener("mouseleave", () => {
+        avatarFour.src = "../img/Dima.png";
+      });
+      avatarFive.addEventListener("mouseover", () => {
+        avatarFive.src = "../img/Sonya2.png";
+      });
+      avatarFive.addEventListener("mouseleave", () => {
+        avatarFive.src = "../img/Sonya.png";
+      });
+      avatarSix.addEventListener("mouseover", () => {
+        avatarSix.src = "../img/Vlad2.png";
+      });
+      avatarSix.addEventListener("mouseleave", () => {
+        avatarSix.src = "../img/Vlad.png";
+      });
+    </script>
+    <script>
+      //scrollify settings
+      $(function () {
+        $.scrollify({
+          section: "section",
+        });
+      });
+      $.scrollify({
+        section: "section",
+        sectionName: "section-name",
+        interstitialSection: "footer",
+        easing: "easeOutExpo",
+        scrollSpeed: 400,
+        offset: 0,
+        scrollbars: true,
+        standardScrollElements: "",
+        setHeights: false,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll: true,
+        before: function (index, sections) {},
+        after: function () {},
+        afterResize: AOS.refresh,
+        afterRender: AOS.refresh,
+        offsets: function () {},
+      });
+    </script>
+    <script>
+      if ($(window).width() < 700) {
+        $.scrollify.disable();
+      }
+    </script>
+  </body>
+</html>

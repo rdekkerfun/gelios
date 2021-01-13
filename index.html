@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Gelios Co</title>
+    <script
+      src="https://kit.fontawesome.com/b372149f2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- overlay menu -->
+
+    <div class="mob-menu" id="mobileMenu">
+      <a
+        class="mob-link"
+        id="closeBtn"
+        href="javasctipt:void(0)"
+        onclick="closeMenu()"
+      >
+        <i class="fas fa-times"></i>
+      </a>
+      <ul class="mob-menu-list">
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#about">ABOUT</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#whatwedo">WHAT WE DO</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#services">SERVICES</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#team">TEAM</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-link" href="#contact">CONTACT US</a>
+        </li>
+        <li class="mob-menu-item">
+          <a
+            class="mob-link linkedin"
+            href="https://www.linkedin.com/in/gelios-company-IT"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="mob-menu-item">
+          <a
+            class="mob-link facebook"
+            href="https://www.facebook.com/Gelioscomapny-107764124606388"
+            target="_blank"
+            rel="noreferrer"
+            >Facebook <i class="fab fa-facebook-square"></i
+          ></a>
+        </li>
+        <li class="mob-menu-item">
+          <a
+            class="mob-link instagram"
+            href="https://www.instagram.com/gelios.company/"
+            target="_blank"
+            rel="noreferrer"
+            >Instagram <i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- top button -->
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <i class="fas fa-angle-up"></i>
+    </button>
+
+    <!-- header -->
+
+    <header class="d-flex">
+      <div>
+        <a href="#">
+          <img class="logo" src="./img/Gelios_logo_2.png" alt="" />
+        </a>
+      </div>
+      <div class="d-flex lang-menu">
+        <a href="#" class="lang-active">en</a>/ <a href="/ua/">ua</a>/
+        <a href="/ru/">ru</a>
+      </div>
+      <div class="d-flex anchor-menu">
+        <a href="#about">about</a>
+        <a href="#whatwedo">what we do</a>
+        <a href="#services">services</a>
+        <a href="#team">team</a>
+        <a href="#contact">contact us</a>
+      </div>
+      <a
+        id="mobMenuBtn"
+        class="head-link"
+        href="javascript:void(0)"
+        onclick="openMenu()"
+      >
+        <img src="./img/Group 17.svg" alt="" />
+      </a>
+    </header>
+
+    <!-- main content -->
+
+    <main>
+      <!-- motto section -->
+      <section>
+        <div
+          id="#motto"
+          class="motto d-flex"
+          data-aos="fade-down"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="motto-text">
+            make<br />
+            success<br />
+            inevitable
+          </div>
+          <div class="social-menu m-auto d-flex">
+            <p>follow us</p>
+            <span class="line"></span>
+            <a
+              class="social-links"
+              href="https://www.instagram.com/gelios.company/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img class="" src="./img/instagram.svg" alt="" />
+            </a>
+            <a
+              class="social-links"
+              href="https://www.facebook.com/Gelioscomapny-107764124606388"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img class="" src="./img/facebook.svg" alt="" />
+            </a>
+            <a
+              class="social-links"
+              href="https://www.linkedin.com/in/gelios-company-IT"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img class="" src="./img/linkedIn.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- about us section -->
+      <section>
+        <div
+          id="about"
+          class="about"
+          data-aos="zoom-in-left"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="about-text">
+            <h4>about us</h4>
+            <h2>march to dream</h2>
+            <p>
+              We are Gelios Company. Our team can implement any solution that
+              will be necessary for the growth and prosperity of your business.
+            </p>
+            <p>
+              The company is a digital product developer. Having assembled
+              experienced professionals, we use all our resources to help our
+              clients see new opportunities and make the right transition to the
+              business of the future.
+            </p>
+            <p>
+              Yesterday you told us about your most cherished desires, today we
+              will use every opportunity to make your dream a reality tomorrow.
+            </p>
+            <h6>about us</h6>
+            <span class="grey-block"></span>
+          </div>
+          <div>
+            <img src="./img/2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- what we do section -->
+      <section>
+        <div
+          id="whatwedo"
+          class="whatwedo"
+          data-aos="zoom-in-right"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="whatwedo-text">
+            <h4>what we do</h4>
+            <h2>BECOME THE GREATEST ALLY IN YOUR PATH</h2>
+            <p>
+              We help businesses create a truly valuable product or service.
+            </p>
+            <p>
+              Our tactic is simple: people-oriented, highly qualified
+              specialists and a professional approach to problem solving. Using
+              these tools, we help your business to reach a new level of
+              development in the shortest time.
+            </p>
+            <p>
+              Our digital services are innovative and tailor-made to your
+              customer’s needs.
+            </p>
+            <h6>what we do</h6>
+            <span class="grey-block"></span>
+          </div>
+          <div class="img-container">
+            <img src="./img/3.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- services section -->
+      <section>
+        <div
+          id="services"
+          class="services"
+          data-aos="zoom-in-left"
+          data-aos-easing="ease"
+        >
+          <div class="services-text">
+            <h4>services</h4>
+            <h2>WHAT CAN WE HELP YOU WITH TODAY?</h2>
+            <h6>services</h6>
+          </div>
+          <div class="cards-container">
+            <div class="cards-row">
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">01</span>
+                  <h5>Comprehensive project</h5>
+                </div>
+                <img src="./img/4.1.png" alt="" />
+                <div class="service-text">
+                  <p>
+                    Our company provides comprehensive solutions for all areas
+                    of business. We implement the most complex projects to bring
+                    your business to the next level. With our technologies, you
+                    will gain transparent control overall business processes and
+                    establish effective interaction with customers and partners.
+                    We will analyze the needs of your business and develop a
+                    professional information system to solve complex problems
+                    and meet the needs of your business.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">02</span>
+                  <h5>Consulting</h5>
+                </div>
+                <img
+                  src="./img/scott-graham-5fNmWej4tAA-unsplash 1.png"
+                  alt=""
+                />
+                <div class="service-text">
+                  <p>
+                    Our team will determine the right direction for the
+                    development of your IT project. Consulting includes a
+                    selection of high-level advice, quick analysis and competent
+                    expertise of your project. Our strategy is consultation long
+                    before the implementation of the project, in this case, our
+                    specialists will set the right direction and help you not to
+                    waste your energy, time and resources.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">03</span>
+                  <h5>Audit</h5>
+                </div>
+                <img
+                  src="./img/lukas-blazek-mcSDtbWXUZU-unsplash 1.png"
+                  alt=""
+                />
+                <div class="service-text">
+                  <p>
+                    We understand that the future of your business depends on a
+                    successful audit. Proper auditing helps companies create
+                    added value and reduce risk. Drawing on global experience,
+                    our team offers multidisciplinary resources to solve complex
+                    technical problems, as well as practical advice from
+                    professionals recognized by experts in their industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cards-row">
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">04</span>
+                  <h5>Outsourcing</h5>
+                </div>
+                <img
+                  src="./img/priscilla-du-preez-NjirplnVra8-unsplash 1.png"
+                  alt=""
+                />
+                <div class="service-text">
+                  <p>
+                    We provide comprehensive strategic outsourcing services for
+                    IT functions. We provide full support for system IT
+                    services, user support, information security systems, IT
+                    infrastructure, and also solve customer problems in
+                    automation and management of business processes.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-text">
+                  <span class="service-id">05</span>
+                  <h5>Outstaffing</h5>
+                </div>
+                <img src="./img/4.4.png" alt="" />
+                <div class="service-text">
+                  <p>
+                    We provide a service for the proper organization of
+                    outstaffing, helping to establish the process of
+                    interaction. We can easily solve problems for optimal work
+                    organization. Our main goal is to resolve issues related to
+                    optimization of the time and resources, operating the
+                    company's budget, as well as reducing the risks associated
+                    with resolving labor disputes.
+                  </p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-text">
+                  <a href="#contact"><h5>Get in touch with us</h5></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- team section -->
+      <section>
+        <div
+          id="team"
+          class="team"
+          data-aos="fade-in-left"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="team-text">
+            <h2>team</h2>
+            <p>
+              Our specialists work on creating digital products for companies
+              from various fields. We find and combine business opportunities
+              and solutions. We ready to work face to face, shoulder to
+              shoulder, to do our best.
+            </p>
+            <h6>team</h6>
+          </div>
+          <div class="team-cards-container">
+            <div class="team-cards">
+              <div class="team-cards-row">
+                <div class="team-card">
+                  <img id="avatarOne" src="./img/Oleg.png" alt="" />
+                  <h4>Oleg Lapa</h4>
+                  <p>owner</p>
+                </div>
+                <div class="team-card">
+                  <img id="avatarTwo" src="./img/Nick.png" alt="" />
+                  <h4>Nick Mykhailov</h4>
+                  <p>CEO, co-founder</p>
+                </div>
+                <div class="team-card">
+                  <img id="avatarThree" src="./img/Daniil.png" alt="" />
+                  <h4>Danil Pyatkov</h4>
+                  <p>BDM, sales manager</p>
+                </div>
+              </div>
+              <div class="team-cards-row">
+                <div class="team-card">
+                  <img id="avatarFour" src="./img/Dima.png" alt="" />
+                  <h4>Dima Mykhailov</h4>
+                  <p>developer</p>
+                </div>
+                <div class="team-card">
+                  <img id="avatarFive" src="./img/Sonya.png" alt="" />
+                  <h4>Sonya Yakovenko</h4>
+                  <p>UX/UI designer</p>
+                </div>
+                <div class="team-card">
+                  <img id="avatarSix" src="./img/Vlad.png" alt="" />
+                  <h4>Vlad Kosachenko</h4>
+                  <p>developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-slider">
+              <div class="team-card">
+                <img id="avatarOne" src="./img/Oleg.png" alt="" />
+                <h4>Oleg Lapa</h4>
+                <p>owner</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarTwo" src="./img/Nick.png" alt="" />
+                <h4>Nick Mykhailov</h4>
+                <p>CEO, co-founder</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarThree" src="./img/Daniil.png" alt="" />
+                <h4>Danil Pyatkov</h4>
+                <p>BDM, sales manager</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarFour" src="./img/Dima.png" alt="" />
+                <h4>Dima Mykhailov</h4>
+                <p>developer</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarFive" src="./img/Sonya.png" alt="" />
+                <h4>Sonya Yakovenko</h4>
+                <p>UX/UI designer</p>
+              </div>
+              <div class="team-card">
+                <img id="avatarSix" src="./img/Vlad.png" alt="" />
+                <h4>Vlad Kosachenko</h4>
+                <p>developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section -->
+      <section>
+        <div
+          id="contact"
+          class="contact"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div class="contact-text">
+            <h2>contact us</h2>
+            <h6>get in touch with us</h6>
+            <div class="address">
+              <div class="address-block">
+                <div class="address-img">
+                  <img src="./img/envelop.svg" alt="" />
+                </div>
+                <div class="address-text">
+                  <h5>Address</h5>
+                  <p>
+                    71-75 Shelton Street, London, Greater London, United
+                    Kingdom, WC2H 9JQ
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form
+            class="form d-flex"
+            action="mailto:hello@gelios.company"
+            method="post"
+          >
+            <div class="form-col">
+              <label class="label" for="">
+                <p>Your Name*</p>
+                <input class="input" type="text" name="" required />
+              </label>
+              <label class="label" for="">
+                <p>Phone*</p>
+                <input class="input" type="text" name="" required />
+              </label>
+              <label class="label" for="">
+                <p>Tell us about your project*</p>
+                <input class="input" type="text" name="" required />
+              </label>
+              <label for="privacy" class="privacy">
+                <input type="checkbox" name="privacy" required />
+                <p class="privacy-text">
+                  By providing your email address you are allowing to send you
+                  email communications in accordance with our Privacy Policy*
+                </p>
+              </label>
+            </div>
+            <div class="form-col">
+              <label class="label" for="email">
+                <p>Email*</p>
+                <input class="input" type="text" name="email" required />
+              </label>
+              <label class="label" for="company">
+                <p>Company</p>
+                <input class="input" type="text" name="company" />
+              </label>
+              <label class="label" for="interest">
+                <p>What are you interested in*</p>
+                <input class="input" type="text" name="interest" required />
+              </label>
+              <button class="sendBtn" type="submit">send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="footer-first-row">
+        <div>
+          <a href="#">
+            <img class="logo" src="./img/Gelios_logo_2.png" alt="" />
+          </a>
+        </div>
+        <div class="social-menu d-flex">
+          <p>follow us</p>
+          <span class="line"></span>
+          <a
+            class="social-links"
+            href="https://www.instagram.com/gelios.company/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img class="" src="./img/instagram.svg" alt="" />
+          </a>
+          <a
+            class="social-links"
+            href="https://www.facebook.com/Gelioscomapny-107764124606388"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img class="" src="./img/facebook.svg" alt="" />
+          </a>
+          <a
+            class="social-links"
+            href="https://www.linkedin.com/in/gelios-company-IT"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img class="" src="./img/linkedIn.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="d-flex anchor-menu">
+        <a href="#about">about us</a>
+        <a href="#whatwedo">what we do</a>
+        <a href="#services">services</a>
+        <a href="#team">team</a>
+        <a href="#contact">contact us</a>
+      </div>
+    </footer>
+    <div class="mobile-footer">
+      <div class="footer-first-row">
+        <div>
+          <a href="#">
+            <img class="logo" src="./img/Gelios_logo_2.png" alt="" />
+          </a>
+        </div>
+        <div class="d-flex anchor-menu">
+          <a href="#about">about us</a>
+          <a href="#whatwedo">what we do</a>
+          <a href="#services">services</a>
+          <a href="#team">team</a>
+          <a href="#contact">contact us</a>
+        </div>
+      </div>
+      <div class="social-menu d-flex">
+        <p>follow us</p>
+        <span class="line"></span>
+        <a
+          class="social-links"
+          href="https://www.instagram.com/gelios.company/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img class="" src="./img/instagram.svg" alt="" />
+        </a>
+        <a
+          class="social-links"
+          href="https://www.facebook.com/Gelioscomapny-107764124606388"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img class="" src="./img/facebook.svg" alt="" />
+        </a>
+        <a
+          class="social-links"
+          href="https://www.linkedin.com/in/gelios-company-IT"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img class="" src="./img/linkedIn.svg" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- scripts -->
+
+    <script>
+      // slick slider
+      $(".mobile-slider").slick({
+        dots: true,
+        arrows: false,
+      });
+    </script>
+    <script src="./js/Scrollify-master/jquery.scrollify.js"></script>
+    <script>
+      // animation on scroll initialization
+      AOS.init({
+        // disable: window.innerWidth < 500,
+      });
+    </script>
+    <script>
+      //top button:
+      topBtn = document.getElementById("topBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          topBtn.style.display = "block";
+        } else {
+          topBtn.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      // overlay menu
+      let mobileMenu = document.getElementById("mobileMenu");
+      let mobMenuBtn = document.getElementById("mobMenuBtn");
+
+      function openMenu() {
+        mobileMenu.style.transition = "1s";
+        mobileMenu.style.transform = "translateX(0%)";
+        mobMenuBtn.style.transition = "1s";
+        mobMenuBtn.style.opacity = "0";
+      }
+
+      function closeMenu() {
+        mobileMenu.style.transition = "1s";
+        mobileMenu.style.transform = "translateX(-100%)";
+        mobMenuBtn.style.transition = "1s";
+        mobMenuBtn.style.opacity = "1";
+      }
+
+      // changing avatars of team
+      var avatarOne = document.getElementById("avatarOne");
+      var avatarTwo = document.getElementById("avatarTwo");
+      var avatarThree = document.getElementById("avatarThree");
+      var avatarFour = document.getElementById("avatarFour");
+      var avatarFive = document.getElementById("avatarFive");
+      var avatarSix = document.getElementById("avatarSix");
+
+      avatarOne.addEventListener("mouseover", () => {
+        avatarOne.src = "./img/Oleg2.png";
+      });
+      avatarOne.addEventListener("mouseleave", () => {
+        avatarOne.src = "./img/Oleg.png";
+      });
+      avatarTwo.addEventListener("mouseover", () => {
+        avatarTwo.src = "./img/Nick2.png";
+      });
+      avatarTwo.addEventListener("mouseleave", () => {
+        avatarTwo.src = "./img/Nick.png";
+      });
+      avatarThree.addEventListener("mouseover", () => {
+        avatarThree.src = "./img/Daniil2.png";
+      });
+      avatarThree.addEventListener("mouseleave", () => {
+        avatarThree.src = "./img/Daniil.png";
+      });
+      avatarFour.addEventListener("mouseover", () => {
+        avatarFour.src = "./img/Dima2.png";
+      });
+      avatarFour.addEventListener("mouseleave", () => {
+        avatarFour.src = "./img/Dima.png";
+      });
+      avatarFive.addEventListener("mouseover", () => {
+        avatarFive.src = "./img/Sonya2.png";
+      });
+      avatarFive.addEventListener("mouseleave", () => {
+        avatarFive.src = "./img/Sonya.png";
+      });
+      avatarSix.addEventListener("mouseover", () => {
+        avatarSix.src = "./img/Vlad2.png";
+      });
+      avatarSix.addEventListener("mouseleave", () => {
+        avatarSix.src = "./img/Vlad.png";
+      });
+    </script>
+    <script>
+      //scrollify settings
+      $(function () {
+        $.scrollify({
+          section: "section",
+        });
+      });
+      $.scrollify({
+        section: "section",
+        sectionName: "section-name",
+        interstitialSection: "footer",
+        easing: "easeOutExpo",
+        scrollSpeed: 400,
+        offset: 0,
+        scrollbars: true,
+        standardScrollElements: "",
+        setHeights: false,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll: true,
+        before: function (index, sections) {},
+        after: function () {},
+        afterResize: AOS.refresh,
+        afterRender: AOS.refresh,
+        offsets: function () {},
+      });
+    </script>
+    <script>
+      if ($(window).width() < 700) {
+        $.scrollify.disable();
+      }
+    </script>
+  </body>
+</html>
