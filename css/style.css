@@ -892,12 +892,12 @@ footer .anchor-menu {
 
 .cyrrilic-motto {
   font-family: "Exo 2", sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 85px;
-line-height: 136.69%;
-letter-spacing: 0.13em;
-color: #EAEAEA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 85px;
+  line-height: 136.69%;
+  letter-spacing: 0.13em;
+  color: #eaeaea;
 }
 
 .cyrrylic-big-name {
@@ -1254,7 +1254,7 @@ color: #EAEAEA;
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 113.19%;
     text-align: right;
     letter-spacing: 0.055em;
@@ -1410,6 +1410,9 @@ color: #EAEAEA;
   }
   .form-col:first-of-type {
     margin-bottom: 50px;
+  }
+  .form .sendBtn {
+    width: 80%;
   }
   footer {
     display: none;
