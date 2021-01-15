@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate:wght@400;700&display=swap&family=Exo+2&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -13,6 +13,7 @@ html {
 .service-id {
   display: none;
 }
+
 .mobile-slider {
   display: none;
 }
@@ -114,6 +115,62 @@ section {
   margin-right: 0;
 }
 
+/* Modal Content/Box */
+.modal {
+  padding: 0 !important;
+  width: 56.53vw !important;
+  max-width: none !important;
+  background-color: rgba(248, 248, 248, 0.86) !important;
+  padding: 5.972vw 6.111vw 7.222vw !important;
+  border-radius: 0 !important;
+  margin-top: 20vh;
+}
+.modal-content {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 113.19%;
+  letter-spacing: 0.055em;
+  color: #181717;
+}
+
+.modal-content h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #181717;
+  max-width: 26.38vw;
+  text-align: left;
+  margin-bottom: 3.54vw;
+}
+
+.modal-content p {
+  max-width: 34.72vw;
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* The Close Button */
+.close {
+  display: block;
+  width: 100%;
+  color: rgba(24, 23, 23, 0.41);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* overlay menu styles*/
 
 .mob-menu {
@@ -123,6 +180,10 @@ section {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
 }
 
 .mob-menu-list {
@@ -272,7 +333,7 @@ header .anchor-menu a {
 
 .about {
   display: flex;
-  padding: 181px 126px 183px;
+  padding: 12.56vw 8.75vw 12.7vw;
 }
 
 .about-text {
@@ -351,7 +412,7 @@ header .anchor-menu a {
 .whatwedo {
   display: flex;
   flex-direction: row-reverse;
-  padding: 181px 126px 183px;
+  padding: 12.56vw 8.75vw 12.7vw;
 }
 
 .whatwedo-text {
@@ -433,7 +494,7 @@ header .anchor-menu a {
 /* services section */
 
 .services {
-  padding: 43px 126px 0;
+  padding: 2.98vw 8.75vw 0;
   background-color: #181717;
 }
 
@@ -487,7 +548,6 @@ header .anchor-menu a {
 
 .service-card {
   position: relative;
-  background: #464646;
   width: 100%;
   max-width: 335px;
   color: #ffffff;
@@ -523,32 +583,49 @@ header .anchor-menu a {
 }
 
 .service-text {
-  position: absolute;
-  z-index: 1000;
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
   top: 0;
-  width: 100%;
-  min-height: 100%;
-  max-height: 500px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.services-text p {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cards-row:nth-of-type(2) .service-card:last-of-type {
   background-color: #565656;
-  transition: 1.5s;
-  transform: translateX(-300vw);
-  font-size: 1vw;
-  font-family: "Montserrat", sans-serif;
-}
-
-.service-text p {
-  padding: 0.5vw;
-}
-
-.service-card:hover > .service-text {
-  transform: translateX(0);
-  transition: 1.5s;
 }
 
 /* team section */
 
 .team {
-  padding: 27px 126px 0;
+  padding: 1.875vw 8.75vw 0;
   background: #181717;
 }
 
@@ -633,7 +710,7 @@ header .anchor-menu a {
 /* contact section */
 
 #contact {
-  padding: 47px 126px 0;
+  padding: 3.263vw 8.75vw 0;
 }
 
 .contact-text h2 {
@@ -708,7 +785,7 @@ header .anchor-menu a {
 
 .form {
   background-color: #dadadacc;
-  margin: 47px 156px 0;
+  margin: 3.263vw 3vw 0;
   padding: 46px 0 60px;
 }
 
@@ -814,13 +891,13 @@ footer .anchor-menu {
 }
 
 .cyrrilic-motto {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 82px;
-  line-height: 136.69%;
-  letter-spacing: 0.17em;
-  color: #eaeaea;
+  font-family: "Exo 2", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 85px;
+line-height: 136.69%;
+letter-spacing: 0.13em;
+color: #EAEAEA;
 }
 
 .cyrrylic-big-name {
@@ -937,7 +1014,7 @@ footer .anchor-menu {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px), (max-height: 700px) {
   section {
     height: auto;
   }
@@ -949,7 +1026,7 @@ footer .anchor-menu {
   }
   .lang-menu {
     position: absolute;
-    top: 600px;
+    top: 90.9vh;
     right: 14px;
   }
   header {
@@ -1188,6 +1265,9 @@ footer .anchor-menu {
   .service-card img {
     width: 49.3vw;
     height: 49.3vw;
+  }
+  .close {
+    display: none;
   }
   .team {
     padding: 60px 20px 86px;
