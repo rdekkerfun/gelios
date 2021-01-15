@@ -559,7 +559,10 @@
                 <input class="input" type="text" name="" required />
               </label>
               <label for="privacy" class="privacy">
-                <input type="checkbox" name="privacy" required />
+                <label class="container"
+                  ><input type="checkbox" name="privacy" required />
+                  <span class="checkmark"></span>
+                </label>
                 <p class="privacy-text">
                   By providing your email address you are allowing to send you
                   email communications in accordance with our Privacy Policy*
@@ -698,6 +701,7 @@
         dots: true,
         arrows: true,
         slidesToScroll: 1,
+        swipe: true,
         swipeToSlide: true,
         infinite: true,
       });
