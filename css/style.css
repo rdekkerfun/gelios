@@ -145,11 +145,13 @@ section {
   user-select: none;
 }
 .container input {
+  -webkit-appearance:none;
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
+  -webkit-appearance:none;
 }
 .checkmark {
   position: absolute;
@@ -903,6 +905,7 @@ header .anchor-menu a {
   letter-spacing: 0.065em;
   color: #000000;
   text-align: left;
+  -webkit-appearance:none;
 }
 
 .form .input {
