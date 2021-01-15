@@ -754,7 +754,7 @@ header .anchor-menu a {
 .team-cards-row {
   display: flex;
   justify-content: space-between;
-  padding: 0 112px;
+  padding: 0 7.77vw;
 }
 
 .team-card {
