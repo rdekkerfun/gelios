@@ -750,12 +750,14 @@
       function openMenu() {
         mobileMenu.style.transition = "1s";
         mobileMenu.style.transform = "translateX(0%)";
+        mobileMenu.style.webkitTransform = "translateX(0%)";
         mobMenuBtn.style.transition = "1s";
         mobMenuBtn.style.opacity = "0";
       }
       function closeMenu() {
         mobileMenu.style.transition = "1s";
         mobileMenu.style.transform = "translateX(-100%)";
+        mobileMenu.style.webkitTransform = "translateX(-100%)";
         mobMenuBtn.style.transition = "1s";
         mobMenuBtn.style.opacity = "1";
       }
