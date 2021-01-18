@@ -1282,9 +1282,10 @@ footer .anchor-menu {
     position: relative;
   }
   .cards-row {
-    display: block;
+    flex-direction: column;
   }
   .service-card {
+    max-width: 100%;
     display: block;
     position: relative;
     background: none;
@@ -1385,7 +1386,10 @@ footer .anchor-menu {
   .cards-row:nth-of-type(1) .service-card:nth-of-type(even) .srvc-img {
     display: block;
     margin-left: auto;
-    position: relative;
+  }
+  .cards-row:nth-of-type(1) .service-card:nth-of-type(odd) .srvc-img {
+    display: block;
+    margin-right: auto;
   }
   .cards-row:nth-of-type(1) .service-card:nth-of-type(odd) .service-text {
     right: 0;
@@ -1402,8 +1406,11 @@ footer .anchor-menu {
     text-align: left;
   }
   .cards-row:nth-of-type(2) .service-card:nth-of-type(odd) .srvc-img {
-    display: block;
     margin-left: auto;
+    display: block;
+  }
+  .cards-row:nth-of-type(2) .service-card:nth-of-type(even) .srvc-img {
+    margin-right: auto;
   }
   .cards-row:nth-of-type(2) .service-card:nth-of-type(even) .service-text {
     right: 0;
@@ -1454,6 +1461,7 @@ footer .anchor-menu {
   .service-card .srvc-img {
     width: 49.3vw;
     height: 49.3vw;
+    background-repeat: no-repeat;
   }
   .modal {
     margin: 0 !important;
