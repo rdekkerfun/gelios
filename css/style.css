@@ -286,8 +286,8 @@ section {
   position: absolute;
   z-index: 1000;
   font-size: 32px;
-  top: 20px;
-  right: 20px;
+  top: 3vw;
+  right: 6vw;
   cursor: pointer;
 }
 
