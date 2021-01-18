@@ -145,13 +145,13 @@ section {
   user-select: none;
 }
 .container input {
-  -webkit-appearance:none;
+  -webkit-appearance: none;
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
-  -webkit-appearance:none;
+  -webkit-appearance: none;
 }
 .checkmark {
   position: absolute;
@@ -676,23 +676,6 @@ header .anchor-menu a {
 
 .service-text {
   display: none;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-.services-text p {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -905,7 +888,7 @@ header .anchor-menu a {
   letter-spacing: 0.065em;
   color: #000000;
   text-align: left;
-  -webkit-appearance:none;
+  -webkit-appearance: none;
 }
 
 .form .input {
@@ -1305,7 +1288,7 @@ footer .anchor-menu {
     display: block;
     position: relative;
     background: none;
-    margin: 0;
+    margin: 0 0 55px;
     padding: 0;
   }
   .cards-row:nth-of-type(2) .service-card:last-of-type {
@@ -1332,6 +1315,7 @@ footer .anchor-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: row;
     width: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1339,6 +1323,95 @@ footer .anchor-menu {
     position: relative;
     padding: 0;
     margin: 0 0 65px;
+  }
+  .service-card img {
+    display: none;
+  }
+  .img-one {
+    background: linear-gradient(
+        270deg,
+        rgba(24, 23, 23, 0.7) 37.84%,
+        rgba(24, 23, 23, 0) 100%
+      ),
+      url(../img/4.1.png);
+    background-position: center;
+  }
+  .img-two {
+    background: linear-gradient(
+        90deg,
+        #181717 0%,
+        rgba(24, 23, 23, 0.7) 38.54%,
+        rgba(24, 23, 23, 0) 100%
+      ),
+      url(../img/scott-graham-5fNmWej4tAA-unsplash\ 1.png);
+    background-position: center;
+  }
+  .img-three {
+    background: linear-gradient(
+        270deg,
+        #181717 0%,
+        rgba(24, 23, 23, 0.7) 36.22%,
+        rgba(24, 23, 23, 0) 100%
+      ),
+      url(../img/lukas-blazek-mcSDtbWXUZU-unsplash\ 1.png);
+    background-position: center;
+  }
+  .img-four {
+    background: linear-gradient(
+        90deg,
+        #181717 0%,
+        rgba(24, 23, 23, 0.7) 43.31%,
+        rgba(24, 23, 23, 0) 102.66%
+      ),
+      url(../img/priscilla-du-preez-NjirplnVra8-unsplash\ 1.png);
+    background-position: center;
+  }
+  .img-five {
+    background: linear-gradient(
+        270deg,
+        #181717 0%,
+        rgba(24, 23, 23, 0.7) 37.23%,
+        rgba(24, 23, 23, 0) 100%
+      ),
+      url(../img/4.4.png);
+    background-position: center;
+  }
+  .cards-row:nth-of-type(1) .service-card:nth-of-type(even) .card-text {
+    flex-direction: row-reverse;
+  }
+  .cards-row:nth-of-type(1) .service-card:nth-of-type(even) .card-text h5 {
+    text-align: left;
+  }
+  .cards-row:nth-of-type(1) .service-card:nth-of-type(even) .srvc-img {
+    display: block;
+    margin-left: auto;
+    position: relative;
+  }
+  .cards-row:nth-of-type(1) .service-card:nth-of-type(odd) .service-text {
+    right: 0;
+    text-align: right;
+  }
+  .cards-row:nth-of-type(1) .service-card:nth-of-type(even) .service-text {
+    left: 0;
+    text-align: left;
+  }
+  .cards-row:nth-of-type(2) .service-card:nth-of-type(odd) .card-text {
+    flex-direction: row-reverse;
+  }
+  .cards-row:nth-of-type(2) .service-card:nth-of-type(odd) .card-text h5 {
+    text-align: left;
+  }
+  .cards-row:nth-of-type(2) .service-card:nth-of-type(odd) .srvc-img {
+    display: block;
+    margin-left: auto;
+  }
+  .cards-row:nth-of-type(2) .service-card:nth-of-type(even) .service-text {
+    right: 0;
+    text-align: right;
+  }
+  .cards-row:nth-of-type(2) .service-card:nth-of-type(odd) .service-text {
+    left: 0;
+    text-align: left;
   }
   .service-card .card-text h5 {
     word-wrap: break-word;
@@ -1370,15 +1443,15 @@ footer .anchor-menu {
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 113.19%;
-    text-align: right;
     letter-spacing: 0.055em;
     color: #efefef;
     min-height: auto;
     height: auto;
+    max-width: 290px;
   }
-  .service-card img {
+  .service-card .srvc-img {
     width: 49.3vw;
     height: 49.3vw;
   }
